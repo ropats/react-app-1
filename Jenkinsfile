@@ -48,7 +48,7 @@ pipeline {
                         } catch (err) {
                             echo: 'caught error: $err'
                         }
-                        sh "docker run --restart always --name react-app -p 1233:80 -d ropats/react-app-1:${env.BUILD_NUMBER}"
+                        sh "docker run --restart always --name react-app-1 -p 1233:80 -d ropats/react-app-1:${env.BUILD_NUMBER}"
                     }
             }
         }
@@ -87,7 +87,7 @@ pipeline {
                         } catch (err) {
                             echo: 'caught error: $err'
                         }
-                        sh "docker run --restart always --name react-app -p 1233:80 -d ropats/react-app-1:${env.BUILD_NUMBER}"
+                        sh "docker run --restart always --name react-app-1 -p 1233:80 -d ropats/react-app-1:${env.BUILD_NUMBER}"
                     }
             }
         }
